@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planifica tus vacaciones</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+<body>
+
+<h1>¿Estás listo para planear tus próximas vacaciones?</h1>
+<p>Elige entre dos opciones increíbles: mar o montaña.</p>
+
+<form id="vacationForm">
+    <div class="question">
+        <label>1. ¿Qué tipo de ambiente prefieres?</label><br>
+        <input type="radio" name="environment" value="mar" required> Mar<br>
+        <input type="radio" name="environment" value="montaña"> Montaña
+    </div>
+
+    <div class="question" id="activitiesQuestion" style="display: none;">
+        <label>2. ¿Qué tipo de actividades te gustaría realizar?</label><br>
+        <div id="marActivities" style="display: none;">
+            <input type="checkbox" name="activities" value="surf"> Surf<br>
+            <input type="checkbox" name="activities" value="snorkel"> Snorkel<br>
+            <input type="checkbox" name="activities" value="paseosEnBarco"> Paseos en barco
+        </div>
+        <div id="montanaActivities" style="display: none;">
+            <input type="checkbox" name="activities" value="senderismo"> Senderismo<br>
+            <input type="checkbox" name="activities" value="escalada"> Escalada<br>
+            <input type="checkbox" name="activities" value="camping"> Camping
+        </div>
+    </div>
+
+    <div class="question">
+        <label>3. ¿Qué es lo más importante para ti en tus vacaciones?</label><br>
+        <select name="importance" required>
+            <option value="relajacion">Relajación</option>
+            <option value="aventura">Aventura</option>
+            <option value="cultura">Cultura y gastronomía</option>
+        </select>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+<script src="main.js"></script>
+</body>
+</html>
